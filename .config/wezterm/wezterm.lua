@@ -44,4 +44,6 @@ config.window_decorations = "RESIZE"
 -- Make wezterm use WSL 2 Ubuntu
 config.default_domain = "WSL:Ubuntu"
 
+config.window_background_opacity = 0.9
+
 return config
