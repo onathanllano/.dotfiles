@@ -18,19 +18,18 @@ config.color_scheme = schemeForAppearance(wezterm.gui.get_appearance())
 
 config.font = wezterm.font_with_fallback({
 	{
-		family = "Rec Mono Custom",
-		-- family = "Maple Mono",
+		family = "IBM Plex Mono",
+		weight = 450,
+		harfbuzz_features = { "ss01", "ss02", "zero" },
 	},
 	{
 		family = "Symbols Nerd Font Mono",
+		scale = 0.75,
 	},
 })
 
 config.font_size = 14
--- config.front_end = "OpenGL"
 config.freetype_load_flags = "NO_HINTING|NO_AUTOHINT"
-
-config.use_cap_height_to_scale_fallback_fonts = true
 
 config.window_padding = {
 	left = 6,
@@ -41,5 +40,8 @@ config.window_padding = {
 
 config.enable_tab_bar = false
 config.window_decorations = "RESIZE"
+
+-- Make wezterm use WSL 2 Ubuntu
+config.default_domain = "WSL:Ubuntu"
 
 return config
