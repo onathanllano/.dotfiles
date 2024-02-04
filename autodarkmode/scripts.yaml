@@ -1,0 +1,10 @@
+Enabled: true
+Component:
+  Scripts:
+  - Name: autodarkmode_wsl
+    Command: powershell
+    ArgsLight: [-NoProfile, -Command, wsl sh ~/scripts/theme-mode/lightmode.sh]
+    ArgsDark: [-NoProfile, -Command,wsl sh ~/scripts/theme-mode/darkmode.sh]
+    AllowedSources: [Any]
+
+
