@@ -39,6 +39,3 @@ local lazyOptions = {
 }
 
 lazy.setup("plugins", lazyOptions)
-
-
-

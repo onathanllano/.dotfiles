@@ -1,5 +1,7 @@
 local options = vim.opt
 
+options.cursorline = true
+
 -- Line numbers
 options.relativenumber = true
 options.number = true
